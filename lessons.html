@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons - My Professional Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: #007bff;
+            color: white;
+        }
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        .lesson {
+            background: #f8f9fa;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .lesson:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .lesson h3 {
+            margin: 0;
+            font-size: 1.3em;
+            color: #007bff;
+        }
+        .lesson-content {
+            display: none;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            margin-top: 40px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .section {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="home.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h1>Lessons</h1>
+            <div class="lesson">
+                <h3 onclick="toggleLesson(this)">Lesson 1: Introduction to Web Development</h3>
+                <div class="lesson-content">
+                    <p>Web development involves creating websites and web applications. This lesson covers the basics:</p>
+                    <ul>
+                        <li><strong>HTML (HyperText Markup Language):</strong> The structure of web pages. Tags like &lt;h1&gt;, &lt;p&gt;, and &lt;div&gt; define content.</li>
+                        <li><strong>CSS (Cascading Style Sheets):</strong> Styles the appearance. Properties like color, font-size, and margin control layout.</li>
+                        <li><strong>JavaScript:</strong> Adds interactivity. Functions, events, and DOM manipulation make pages dynamic.</li>
+                    </ul>
+                    <p><strong>Sources to Learn:</strong></p>
+                    <ul>
+                        <li>Book: "HTML and CSS: Design and Build Websites" by Jon Duckett – A visual guide with examples for beginners.</li>
+                        <li>Website: MDN Web Docs (Mozilla Developer Network) – Comprehensive tutorials on HTML, CSS, and JavaScript basics.</li>
+                        <li>Online Platform: FreeCodeCamp's Responsive Web Design Certification – Interactive lessons with projects.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lesson">
+                <h3 onclick="toggleLesson(this)">Lesson 2: Advanced JavaScript</h3>
+                <div class="lesson-content">
+                    <p>Building on basics, advanced JavaScript includes asynchronous programming and modern features:</p>
+                    <ul>
+                        <li><strong>Asynchronous Code:</strong> Using promises, async/await for handling tasks like API calls without blocking.</li>
+                        <li><strong>ES6+ Features:</strong> Arrow functions, destructuring, modules, and classes for cleaner code.</li>
+                        <li><strong>DOM Manipulation:</strong> Advanced techniques like event delegation and dynamic content updates.</li>
+                    </ul>
+                    <p><strong>Sources to Learn:</strong></p>
+                    <ul>
+                        <li>Book: "Eloquent JavaScript" by Marijn Haverbeke – A free online book (also available in print) covering advanced topics like asynchronous programming.</li>
+                        <li>Website: JavaScript.info – Detailed guides on ES6+ features, DOM manipulation, and more.</li>
+                        <li>Online Platform: Codecademy's JavaScript course (advanced sections) – Hands-on exercises for building skills.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lesson">
+                <h3 onclick="toggleLesson(this)">Lesson 3: Python Basics</h3>
+                <div class="lesson-content">
+                    <p>Python is a versatile, beginner-friendly language. This lesson introduces core concepts:</p>
+                    <ul>
+                        <li><strong>Variables and Data Types
+    <script src="script.js"></script>

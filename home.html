@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Professional Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: #007bff;
+            color: white;
+        }
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 2em;
+            font-weight: 500;
+        }
+        p {
+            font-size: 1.1em;
+            margin: 15px 0;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        img {
+            display: block;
+            margin: 20px ;
+            max-width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            margin-top: 40px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .section {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="home.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h1>Welcome to My Professional Website</h1>
+            <img src="/pic/DELA PEÑA, JOHN ANDREY .jpg" alt="Your Photo">
+            <p><strong>Motto:</strong> Live freely as you are and stay positive</p>
+            <h2>Fun Facts About Me</h2>
+            <ul>
+                <li>I love playing and reading in my spare time.</li>
+                <li>I love eating french fries and drinking milktea or ice coffee.</li>
+                <li>I love playing basketball and volleyball to stay physically active.</li>
+                <li>I once "dreamed" of traveling the all over the world but here I am stuck at being a carefree students.</li>
+            </ul>
+            <p>This is the home page. Here, you can learn about me and navigate to other sections.</p>
+            <p>Feel free to explore!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 My Professional Website. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
